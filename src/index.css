@@ -40,3 +40,28 @@ h3 {
     bottom: 0;
 }
 
+
+#slika {
+  width: 100px;
+
+}
+
+.launch{
+  width: 100%;
+  text-align: center;
+  transition: transform .2s;
+
+}
+
+.launch:hover{
+  transform: scale(1.05);
+}
+
+.launch-list{
+ 
+  display: flex;
+  flex-direction: row;
+
+  
+
+}

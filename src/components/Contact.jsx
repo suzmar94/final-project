@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { getAllWorks } from '../services';
+import React  from 'react';
+// import { getAllWorks } from '../services';
 
 const Contact = () => {
     // const [work, setWorks] = useState("")

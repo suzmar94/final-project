@@ -1,32 +1,29 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Home from "./components/Home";
-import Works from "./components/Works";
+import Login from "./components/Login";
+// import Works from "./components/Works";
+import WorksList from "./components/WorksList";
+import { getAllWorks } from "./services";
 
-const Header = () => {
-  return (
-    <>
-      <nav id="nav">
-      <Link to="/" className="navigacija">
-      <b>EL RINCÓN DE SUSI</b>
-        </Link>
-        <Link to="/" className="navigacija">
-          HOME
-        </Link>
-        <Link to="/works" className="navigacija">
-          WORKS
-        </Link>
-        <Link to="/contacts" className="navigacija">
-          CONTACT
-        </Link>
-      </nav>
-</>
-  );
-};
 
 function App() {
+
+  const [user, setUser] = useState(null)
+  const [work, setWorks] = useState([])
+
+  useEffect(() => {
+    getAllWorks().then(res => {
+      console.log(res.data);
+      setWorks(res.data)
+      
+    })
+  }, [])
+
+  
   return (
     <>
       <Router>
@@ -38,11 +35,16 @@ function App() {
           </Route>
 
           <Route path="/works">
-            <Works />
+          {user ? <WorksList arr={work}/> : <Redirect to='/login' />}
+            
           </Route>
 
           <Route path="/contacts">
-            <Contact />
+            {<Contact />}
+          </Route>
+
+          <Route path="/login">
+            <Login setUser={setUser}/>
           </Route>
         </Switch>
 

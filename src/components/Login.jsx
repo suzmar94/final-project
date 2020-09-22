@@ -1,17 +1,21 @@
 import React, {useState} from 'react'
+import { useHistory } from 'react-router-dom'
 
-const Login = () => {
+const Login = ({setUser}) => {
 
     const [name, setName] = useState("")
     const [password, setPassword] = useState("")
+    const history = useHistory()
 
     const register = e =>{
         e.preventDefault();
         console.log({name, password});
+        setUser(name)
+        history.push('/works')
     }
     return (
         <>
-        <form onSubmit={register}>
+        <form onSubmit={register} id="home">
 
             <label>Username:</label>
 
