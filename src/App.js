@@ -14,6 +14,7 @@ function App() {
 
   const [user, setUser] = useState(null)
   const [work, setWorks] = useState([])
+  const [filter, setFilter] =useState("")
 
   useEffect(() => {
     getAllWorks().then(res => {
@@ -35,7 +36,7 @@ function App() {
           </Route>
 
           <Route path="/works">
-          {user ? <WorksList arr={work}/> : <Redirect to='/login' />}
+          {user ? <WorksList arr={work} setFilter={setFilter} filter={filter}/> : <Redirect to='/login' />}
             
           </Route>
 

@@ -1,11 +1,16 @@
 import React from "react";
 import Works from "./Works";
 
-const WorksList = ({ arr }) => {
+const WorksList = ({ arr, setFilter, filter }) => {
   return (
     <>
+      <input onChange={e=>{
+        setFilter(e.target.value)
+      }}/>
       <div className="launch-list">
-          {arr.map((work) => (
+          {arr
+          .filter(work => work.description.toLowerCase().includes(filter.toLowerCase()))
+          .map((work) => (
             <Works
               key={work.id}
               title={work.title}
