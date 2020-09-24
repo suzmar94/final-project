@@ -1,6 +1,6 @@
 Welcome to EL RINCÓN DE SUSI Project  
  
-About this file  
+About project 
 
 The purpose of this project is to facilitate and help current students of the Faculty of Filology to write seminar papers, which are many during studies on this faculty, by giving them our papers both seminar and many others in Serbian and Spanish language. Also it offers them a possibility to contribute to this project by sending their works (seminary or other type) which we will post after the checking.  
 
