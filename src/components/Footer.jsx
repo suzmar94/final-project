@@ -14,7 +14,7 @@ import {
 const Footer = (props) => {
   return (
     <>
-      <footer className="footer">
+      <footer>
         <div className="footer-container">
           <div className="btn-container">
             <a
@@ -50,7 +50,7 @@ const Footer = (props) => {
               <FontAwesomeIcon icon={faYoutube} size="2x" />
             </a>
           </div>
-          <br />
+
           <div className="copyright">© 2020 Copyright: EL RINCÓN DE SUSI</div>
         </div>
       </footer>

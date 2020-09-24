@@ -1,20 +1,22 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-#nav {
-  position: sticky;
-  top: 0;
-  margin-right: 20px;
-  margin-top: 20px;
+html,
+body {
+  height: 100%;
+  margin: auto;
 }
 
-h3 {
-  float: left;
-  color: rgb(238, 211, 211);
-  font-size: 2em;
-  margin-right: 20px;
-  margin-top: 20px;
+#root {
+  height: auto !important;
+  min-height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  position: relative !important;
+}
+
+main {
+  flex: 1;
+  position: relative;
+  padding: 40px;
+  padding-bottom: 16px;
 }
 
 .navigacija {
@@ -24,84 +26,56 @@ h3 {
   font-size: 2em;
   justify-content: space-between;
   padding: 1rem;
-  /* color:  #241a1a; */
   color: rgb(238, 211, 211);
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.navigacija:hover 
-{
-     color:#4e1313; 
-     text-decoration:none; 
+.navigacija:hover {
+  color: #4e1313;
+  text-decoration: none;
 }
 
-#home{
+#home {
   font-size: large;
-  padding: 60px;
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   text-align: justify;
-  
 }
-/* #opis{} */
-
-
-#footer{
-    position: fixed;
-    bottom: 0;
-    height: 100px;
-}
-
 
 #slika {
   width: 100px;
-
-  
 }
 
-
-.launch{
-  width: 100%;
+.work {
   text-align: center;
-  transition: transform .2s;
-
+  transition: transform 0.2s;
+  font-family: "Courier New", Courier, monospace;
+  width: 300px;
+  border: 1px solid #ddd;
+  margin-left: 16px;
+  padding: 8px;
 }
 
-.launch:hover{
+.work:hover {
   transform: scale(1.05);
 }
 
-.launch-list{
- 
+.work-list {
   display: flex;
   flex-direction: row;
-
-  
-
 }
 
-
-/* FOOTER */
-
-
 div.footer-container {
-  height: 130px;
   background-color: rgb(238, 211, 211);
 }
 
-/* footer {
-  height: 100px;
-} */
-
 div.btn-container {
-  margin-top: 500px;
-  text-align: center; 
-  }
+  text-align: center;
+}
 
 div.copyright {
-  margin-bottom: -40px;
   color: black;
-  font-weight: 500;
   text-align: center;
+  font-family: "Courier New", Courier, monospace;
 }
 
 a.btn-floating.btn-lg.btn-fb,
@@ -109,7 +83,6 @@ a.btn-floating.btn-lg.btn-tw,
 a.btn-floating.btn-lg.btn-ins,
 a.btn-floating.btn-lg.btn-yt {
   color: #241a1a;
-  /* margin-left: 20px; */
 }
 
 a.btn-floating.btn-lg.btn-fb:hover {
@@ -117,52 +90,54 @@ a.btn-floating.btn-lg.btn-fb:hover {
 }
 
 a.btn-floating.btn-lg.btn-tw:hover {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 a.btn-floating.btn-lg.btn-ins:hover {
-  color: #EB0184;
+  color: #eb0184;
 }
 
 a.btn-floating.btn-lg.btn-yt:hover {
-  color: #FF0000;
+  color: #ff0000;
 }
 
-
-
-/* CONTACT US */
-
-div.container.d-flex.flex-column.contact {
-  margin-bottom: -95px;
+.contact {
+  max-width: 500px;
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
-  font-family:'Courier New', Courier, monospace;
+  margin: auto;
 }
-
-.contact-us {
-  font-size: 2rem;
-  margin-top: 40px;
-}
-
-/* .border-bottom {
-  margin-top: 10px;
-} */
-
-.span {
-  margin-top: 20px;
-}
-
-/* LOGIN */
-
-
-.loginform.form-group.container.d-flex.flex-column {
-  margin-bottom: -200px;
-}
-
-
-/* NAVIGATION */
 
 .navbar.navbar-dark.bg-dark {
   height: 90px;
+}
+
+
+
+.loginform form-group{
+  margin: auto;
+  max-width: 500px;
+}
+
+.h5{
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+
+}
+
+.form-control{
+  font-family: "Courier New", Courier, monospace;
+
+}
+
+.lejbel{
+  font-family: "Courier New", Courier, monospace;
   
-  /* background-color: rgb(238, 211, 211) !important; */
+  
+
+}
+
+.btn btn-dark{
+  margin: auto;
+
 }
