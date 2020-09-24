@@ -7,12 +7,12 @@ The purpose of this project is to facilitate and help current students of the Fa
 
 Tools Requirements Declaration
 
-1)axios: 0.20.0
-2)react: 16.13.1
-3)react-dom: 16.13.1
-4)react-router-dom: 5.2.0
-5)react-scripts: 3.4.3
-6)bootstrap: 4.0.0
+axios: 0.20.0  
+react: 16.13.1  
+react-dom: 16.13.1  
+react-router-dom: 5.2.0  
+react-scripts: 3.4.3  
+bootstrap: 4.0.0  
 
 
 Functionality overview
@@ -44,10 +44,15 @@ cd el-rincon-de-susi
 Installing dependencies
 
 npm install
+
 npm i --save @fortawesome/fontawesome-svg-core
+
 npm install --save @fortawesome/react-fontawesome
+
 npm install --save @fortawesome/free-brands-svg-icons
+
 npm axios install
+
 npm start
 
 json server must be globaly installed
