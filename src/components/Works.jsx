@@ -11,9 +11,11 @@ const Works = ({ title, description }) => {
               src="https://blog.macsales.com/wp-content/uploads/2019/10/ReducePDF-286x325.jpg"
               alt=""
             />
-            <p>{title}</p>
-            <hr />
-            <p>{description}</p>
+            <div id="opis">
+              <p>{title}</p>
+              <hr />
+              <p>{description}</p>
+            </div>
           </div>
         </div>
       </div>

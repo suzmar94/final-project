@@ -1,25 +1,27 @@
-import React  from 'react';
-// import { getAllWorks } from '../services';
+import React from "react";
 
 const Contact = () => {
-    // const [work, setWorks] = useState("")
+  return (
+    <div className="container d-flex flex-column contact">
+      <p className="contact-us">Contact us</p>
+      <br />
 
-    // useEffect(() => {
+      <p className="border-bottom">You can reach us here</p>
 
-    //         getAllWorks().then(res=>{
-    //         console.log(res.data)
-    //         setWorks(res.data)
-    //     })
-        
-    //   },[])
-      
-    return (
-        <>
-      <div id="home">ovde ce biti kontakt</div>
-      {/* <p>{work}</p> */}
-    
-        </>
-    )
-  }
+      <div className="span">
+        <span>By phone at: +381 69 00 000</span>
+        <br />
+        <span>By email at: info@elrincondesusi.org</span>
+      </div>
 
-  export default Contact
+      <br />
+      <p className="border-bottom">Customer Service hours:</p>
+
+      <div className="span">
+        <span>Monday to Friday, 9am to 13pm</span>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;

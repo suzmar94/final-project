@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Login from "./components/Login";
-// import Works from "./components/Works";
 import WorksList from "./components/WorksList";
 import { getAllWorks } from "./services";
 
@@ -28,6 +27,9 @@ function App() {
   return (
     <>
       <Router>
+
+      <nav className="navbar navbar-dark bg-dark">
+
         <Header />
 
         <Switch>
@@ -49,8 +51,11 @@ function App() {
           </Route>
         </Switch>
 
+        </nav>
+
         <Footer />
       </Router>
+      
     </>
   );
 }

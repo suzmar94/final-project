@@ -15,11 +15,15 @@ const Login = ({setUser}) => {
     }
     return (
         <>
-        <form onSubmit={register} id="home">
+        <form onSubmit={register} id="home" className="loginform form-group container d-flex flex-column">
+
+        <h6 className="h5">In order to check out our works, please login!</h6>
+        <br/>
+
 
             <label>Username:</label>
 
-            <input 
+            <input className="form-control"
             value={name}
             onChange = {e => setName(e.target.value)}
             type="text" 
@@ -29,15 +33,15 @@ const Login = ({setUser}) => {
             
             <label>Password:</label>
 
-            <input 
+            <input className="form-control"
             value={password}
             onChange = {e => setPassword(e.target.value)}
             type="password" 
             placeholder="Password..." 
             name="password"
             />
-            
-            <input type="submit"/>
+            <br/>
+            <input className="btn btn-dark" type="submit"/>
 
         </form>
         </>

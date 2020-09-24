@@ -19,12 +19,20 @@ h3 {
 
 .navigacija {
   display: inline;
-  text-decoration: none;
+  text-decoration: none !important;
   list-style: none;
   font-size: 2em;
   justify-content: space-between;
   padding: 1rem;
+  /* color:  #241a1a; */
   color: rgb(238, 211, 211);
+  cursor:pointer;
+}
+
+.navigacija:hover 
+{
+     color:#4e1313; 
+     text-decoration:none; 
 }
 
 #home{
@@ -32,19 +40,24 @@ h3 {
   padding: 60px;
   font-family:'Courier New', Courier, monospace;
   text-align: justify;
+  
 }
+/* #opis{} */
 
 
 #footer{
     position: fixed;
     bottom: 0;
+    height: 100px;
 }
 
 
 #slika {
   width: 100px;
 
+  
 }
+
 
 .launch{
   width: 100%;
@@ -64,4 +77,92 @@ h3 {
 
   
 
+}
+
+
+/* FOOTER */
+
+
+div.footer-container {
+  height: 130px;
+  background-color: rgb(238, 211, 211);
+}
+
+/* footer {
+  height: 100px;
+} */
+
+div.btn-container {
+  margin-top: 500px;
+  text-align: center; 
+  }
+
+div.copyright {
+  margin-bottom: -40px;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+}
+
+a.btn-floating.btn-lg.btn-fb,
+a.btn-floating.btn-lg.btn-tw,
+a.btn-floating.btn-lg.btn-ins,
+a.btn-floating.btn-lg.btn-yt {
+  color: #241a1a;
+  /* margin-left: 20px; */
+}
+
+a.btn-floating.btn-lg.btn-fb:hover {
+  color: #4267b2;
+}
+
+a.btn-floating.btn-lg.btn-tw:hover {
+  color: #1DA1F2;
+}
+
+a.btn-floating.btn-lg.btn-ins:hover {
+  color: #EB0184;
+}
+
+a.btn-floating.btn-lg.btn-yt:hover {
+  color: #FF0000;
+}
+
+
+
+/* CONTACT US */
+
+div.container.d-flex.flex-column.contact {
+  margin-bottom: -95px;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.contact-us {
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+/* .border-bottom {
+  margin-top: 10px;
+} */
+
+.span {
+  margin-top: 20px;
+}
+
+/* LOGIN */
+
+
+.loginform.form-group.container.d-flex.flex-column {
+  margin-bottom: -200px;
+}
+
+
+/* NAVIGATION */
+
+.navbar.navbar-dark.bg-dark {
+  height: 90px;
+  
+  /* background-color: rgb(238, 211, 211) !important; */
 }

@@ -4,9 +4,14 @@ import Works from "./Works";
 const WorksList = ({ arr, setFilter, filter }) => {
   return (
     <>
-      <input onChange={e=>{
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <input className="form-control" onChange={e=>{
         setFilter(e.target.value)
-      }}/>
+      }
+      }/>
       <div className="launch-list">
           {arr
           .filter(work => work.description.toLowerCase().includes(filter.toLowerCase()))
