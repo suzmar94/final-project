@@ -29,7 +29,7 @@ const Footer = (props) => {
             </a>
 
             <a
-              href="https://en-gb.facebook.com/cuvanjepasabeograd/"
+              href="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-floating btn-lg btn-fb"
