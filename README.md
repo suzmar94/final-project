@@ -7,12 +7,12 @@ The purpose of this project is to facilitate and help current students of the Fa
 
 Tools Requirements Declaration
 
-axios: 0.20.0
-react: 16.13.1
-react-dom: 16.13.1
-react-router-dom: 5.2.0
-react-scripts: 3.4.3
-bootstrap: 4.0.0
+1)axios: 0.20.0
+2)react: 16.13.1
+3)react-dom: 16.13.1
+4)react-router-dom: 5.2.0
+5)react-scripts: 3.4.3
+6)bootstrap: 4.0.0
 
 
 Functionality overview
@@ -23,7 +23,7 @@ It contains heder with the nav bar created with react router dom which contains 
 
 -HOME page with the infomation about the project
 
--WORKS page which can not be accessed without login(simulation at the moment). After the login, page WORKS opens and the seminar papers appears. The same are taken from custom made API, built with firebase functions. On this page appears also filter input field where the works can be searched by name and description.
+-WORKS page which can not be accessed without login(simulation at the moment). After the login, page WORKS opens and the seminar papers appears. The same are taken from custom made API, built with firebase functions. PaOn this page appears also filter input field where the works can be searched by name and description.
 
 -CONTACT page with the contact information
 
